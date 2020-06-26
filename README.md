@@ -2,7 +2,7 @@
   <label>hackathon_dashboard</label>
   <row>
     <panel>
-      <title>Test Dashboard</title>
+      <title>Test Dashboardddd</title>
       <chart>
         <search>
           <query>index="_audit" | top limit=20 path</query>

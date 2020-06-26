@@ -2,7 +2,7 @@
   <label>hackathon_dashboard</label>
   <row>
     <panel>
-      <title>Test Dashboarddd changed!!</title>
+      <title>Test Dashboarddd chaned!!</title>
       <chart>
         <search>
           <query>index="_audit" | top limit=20 path</query>

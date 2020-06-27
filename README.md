@@ -2,7 +2,7 @@
   <label>hackathon_dashboard</label>
   <row>
     <panel>
-      <title>Test Dashboarddd changed!!</title>
+      <title>Changing the deashboard title!!</title>
       <chart>
         <search>
           <query>index="_audit" | top limit=20 path</query>
@@ -42,6 +42,19 @@
         <option name="trellis.scales.shared">1</option>
         <option name="trellis.size">medium</option>
       </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <map>
+        <search>
+          <query>index="_audit" | timechart sum(Distance) as distance span=7d@w1</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="mapping.type">choropleth</option>
+      </map>
     </panel>
   </row>
 </dashboard>

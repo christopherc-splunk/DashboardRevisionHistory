@@ -2,7 +2,7 @@
   <label>hackathon_dashboard</label>
   <row>
     <panel>
-      <title>Changing the deashboard title!!</title>
+      <title>Changing the deashboard tite!!</title>
       <chart>
         <search>
           <query>index="_audit" | top limit=20 path</query>

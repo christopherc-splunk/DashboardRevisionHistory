@@ -1,5 +1,5 @@
 <dashboard>
-  <label>hackathon_dashboard</label>
+  <label>hackathon_dashboad</label>
   <row>
     <panel>
       <title>Changing the deashboard tite!!</title>

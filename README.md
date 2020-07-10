@@ -2,7 +2,7 @@
   <label>hackathon_dashboad</label>
   <row>
     <panel>
-      <title>Changing the deashboard tite!!</title>
+      <title>NEw title</title>
       <chart>
         <search>
           <query>index="_audit" | top limit=20 path</query>
@@ -12,7 +12,7 @@
         </search>
         <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
         <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
-        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.axisTitleX.visibility">visible</option>d
         <option name="charting.axisTitleY.visibility">visible</option>
         <option name="charting.axisTitleY2.visibility">visible</option>
         <option name="charting.axisX.abbreviation">none</option>
@@ -44,17 +44,3 @@
       </chart>
     </panel>
   </row>
-  <row>
-    <panel>
-      <map>
-        <search>
-          <query>index="_audit" | timechart sum(Distance) as distance span=7d@w1</query>
-          <earliest>-24h@h</earliest>
-          <latest>now</latest>
-        </search>
-        <option name="drilldown">none</option>
-        <option name="mapping.type">choropleth</option>
-      </map>
-    </panel>
-  </row>
-</dashboard>

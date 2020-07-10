@@ -2,7 +2,7 @@
   <label>hackathon_dashboad</label>
   <row>
     <panel>
-      <title>NEWWWWWWWWWWWWW</title>
+      <title>A better title</title>
       <chart>
         <search>
           <query>index="_audit" | top limit=20 path</query>

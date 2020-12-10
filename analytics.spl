@@ -1,0 +1,8 @@
+index=analytics component=gateway enabled_metrics
+| spath output=metrics path=data.enabled_metrics
+| eval alert_enabled=if(alerts="true", 1, 0)
+| eval tv_enabled=if(tv="true", 1, 0)
+| eval ar_enabled=if(ar="true", 1, 0)
+| table timestamp deploymentID 
+| sort deploymentID, timestamp desc
+| dedup deploymentID
